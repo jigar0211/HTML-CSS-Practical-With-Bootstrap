@@ -2,14 +2,7 @@
 margin: 0px;
 padding: 0px;
 }
-.item img
-{
-    transition: transform .2s;
-}
-.item img:hover{
 
-    transform: scale(1.1); 
-}
 .navbar{
     background-color: #2874f0;
 }
@@ -153,4 +146,14 @@ flex-wrap: nowrap;
 .offer{
   -ms-overflow-style: none;  
   scrollbar-width: none;  
+}
+.hiii
+{
+    display: flex;
+    flex-direction: column;
+}
+.hrtag
+{
+    margin-top: 0;
+    margin-bottom: 10px;
 }

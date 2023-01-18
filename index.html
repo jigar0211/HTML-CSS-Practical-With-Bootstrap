@@ -38,71 +38,66 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+ 
     <link rel="stylesheet" href="./style.css" />
 
     <title>Bootstrap</title>
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg justify-content-center bg-body-tertiary"
-    >
-      <div class="container-fluid ms-5 align-item-center d-flex">
-        <div class="navbar-brand ms-5 d-flex">
-          <img
-            src="./img/flipkartname.png"
-            alt="Error"
-            width="100px"
-            height="20px"
-          />
-          <samp
-            >Explore<span> Plus</span
-            ><sup
-              ><img
-                src="./img/pluslogo.png"
-                alt="Error"
-                height="12px"
-                width="12px" /></sup
-          ></samp>
-        </div>
+    
+    <nav class="navbar navbar-expand-lg ">
 
-        <form class="d-flex bg-white w-100" role="search">
-          <input
-            type="text"
-            class="search"
-            placeholder=" Search For Product Brands and more..."
-          />
+      <div class="container d-flex overflow-hidden justify-content-center text-center">
 
-          <!-- <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">  -->
-          <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-        </form>
-      </div>
-
-      <div
-        class="container-fluid d-flex px-0 ms-5 align-item-center text-center justify-content-center"
-      >
-        <div class="row gx-5">
-          <div class="col">
-            <div class="mt-1">
-              <a href="#" class="navlink"
-                ><button class="logbtn">Login</button></a
-              >
-            </div>
+        <div class="row gx-5 w-100">
+          <div class="col-md-3 mb-lg-3 d-flex justify-content-around">
+          <a class="navbar-brand" href="#">
+              <img src="./img/flipkartname.png" alt="Error" width="100px" height="20px"/>
+              <samp style="font-size: 1.3rem; color: white;">Explore<span> Plus</span><sup><img src="./img/pluslogo.png" alt="Error" height="12px" width="12px" /></sup
+          ></samp></a>
           </div>
-          <div class="col more-cont">
-            <div class="mt-1">
-              more
-              <i class="fa-solid fa-angle-down" class="angle-down-icon"></i>
-            </div>
-          </div>
-          <div class="col cart">
-            <div class="mt-1">
-              <i class="fa-solid fa-cart-shopping"></i>Cart
-            </div>
+
+          <div class="col-md-8 mx-1 d-flex mt-1">
+            <div class="d-flex w-100 mt-3 mb-3 bg-light shadow-lg">
+                <input class="form-control mt-sm-2 w-100 justify-content-center search" type="search" placeholder=" Search For Product Brands and more..." aria-label="Search">
+                <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+              </div>
+              <button class="navbar-toggler bg-light mb-sm-5 mt-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> 
           </div>
         </div>
+        
       </div>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-50 d-flex justify-content-around">
+          <li class="nav-item active d-flex justify-content-center">
+            <a class="nav-link" href="#"><button class="logbtn">Login</button><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown d-flex mt-2 justify-content-center">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span style="font-size: 1.9rem; color: white;">More</span> 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Notification Preference</a>
+              <a class="dropdown-item" href="#">24x7 Customer care</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Advertise</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex mt-2 justify-content-center">
+            <a class="nav-link active" href="#"><i class="fa-solid fa-cart-shopping cart"></i><span style="font-size: 1.9rem; color: white;"> Cart</span></a>
+          </li>
+        </ul>
+      </div>
+      
     </nav>
+
     <!-- Navbar End -->
 
     <!-- Offer Item Start -->
@@ -157,15 +152,17 @@
 
     <!-- Products Start -->
 
-    <div class="container-fluid justify-content-center  bg-light shadow-lg">
+    <div class="container-fluid justify-content-center bg-light shadow-lg">
       <div class="row g-0 mt-4 gx-2 mx-5 ms-md-5 shadow d-flex rounded justify-content-center bg-white">
         <div class="col-sm-6 col-md-10">
           <div class="row gx-5">
             <div class="col">
              <div class="p-1 d-flex">
-               <P class="hiii" style="font-size: 30px; font-family: sans-serif;">Deals of the Day</P>
-                <div class="content ms-3 mt-2">
-                  <img src="img/timer1.svg" alt="time" width="25px" height="25px"> <samp style="color: #a3a3a3;font-size: 20px;"> <b>22 : 07 : 36 Left</samp></b>
+               <div class="h3">Deals of the Day</div> 
+                <div class="content ms-5 mt-2">
+                  <blockquote class="blockquote">
+                    <img src="img/timer1.svg" alt="time" width="25px" height="25px"> <samp style="color: #a3a3a3;font-size: 20px;" class="mt-5"> 22:07:36 Left</samp>
+                  </blockquote> 
                 </div>
              </div>
             </div>
@@ -333,9 +330,9 @@
           </div>
         </div>
 
-        <div class="col-md-2 text-center border">
+        <div class="col-md-2 mt-2 text-center justify-content-center ">
           <div class="event">
-            <img src="./img/shoppingcart.png" width="100%" height="100%" alt="">
+            <img src="./img/shoppingcart.png" width="90%" height="90%" alt="">
           </div>
         </div>
       </div>
@@ -349,7 +346,10 @@
             <div class="row gx-0">
               <div class="col">
                <div class="p-1 d-flex">
-               <P class="hiii" style="font-size: 30px; font-family: sans-serif;">Book And music Instruments <br> <span style="font-size: 15px; color: #a3a3a3;">Shop Now!</span></P> 
+                <blockquote class="blockquote">
+                  <P class="hiii" style="font-size: 30px; font-family: sans-serif;">Book And music Instruments <br> <span style="font-size: 15px; color: #a3a3a3;">Shop Now!</span></P>
+                </blockquote>
+                <!--   -->
                </div>
               </div>
               <!--  -->
@@ -553,6 +553,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>
   <script src="Javascript/script.js"></script>
 </html>
